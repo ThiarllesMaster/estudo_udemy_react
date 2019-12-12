@@ -1,9 +1,9 @@
 //Obrigatório já que é um componente
 import React from 'react'
 
-function primeiro() {
-    //Retornar código JSX 
-    return <h1>Meu primeiro componente</h1>
-}
-
-export default primeiro
+export default  (props) => 
+ <h1>Minha função Arrow
+     {props.name} <br/>
+     {(props.name == 'Rafinha')?'Minha Filha':'Não conheço'}
+     {2+5}
+ </h1>
